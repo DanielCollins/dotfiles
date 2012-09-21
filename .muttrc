@@ -1,0 +1,13 @@
+color index red default ~P                                                       
+set realname="Daniel Collins"                                                    
+set from="mail@dcollins.info"                                                    
+set use_from=yes                                                                 
+set mbox_type=Maildir                                                            
+set folder="~/Maildir"                                                           
+set mask="!^\\.[^.]"                                                             
+set mbox="~/Maildir"                                                             
+set record="~/Sent"                                                              
+set copy=yes                                                                     
+set postponed="+.Drafts"                                                         
+set spoolfile="~/Maildir"
+
