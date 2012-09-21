@@ -1,0 +1,7 @@
+URxvt*transparent:false
+URxvt*font:xft:DejaVu Sans Mono:pixelsize=12
+URxvt*scrollBar:false
+URxvt*scrollBar_right:false
+URxvt*imLocale:en_US.UTF-8
+URxvt*iso14755: False
+
