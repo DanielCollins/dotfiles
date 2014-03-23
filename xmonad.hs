@@ -9,11 +9,13 @@ main = xmonad =<< statusBar myBar myPP toggleStrutsKey myConfig
 
 myBar = "xmobar"
 
-myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">" }
+myPP = xmobarPP { ppCurrent = xmobarColor "#2aa198" "" . wrap "<" ">" }
 
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
 myConfig = defaultConfig { modMask = mod4Mask,
                            terminal = "urxvt",
-                           normalBorderColor = "#cccccc",
-                           focusedBorderColor = "#cd8b00" }
+                           normalBorderColor = "#586e75",
+                           focusedBorderColor = "#d33682",
+                           borderWidth = 3 }
+
