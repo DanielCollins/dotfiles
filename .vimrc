@@ -7,4 +7,6 @@ set nobackup
 set nowb
 set noswapfile
 set nomodeline
+set background=light
+colorscheme solarized
 
