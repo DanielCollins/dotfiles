@@ -10,4 +10,5 @@ set record="~/Sent"
 set copy=yes                                                                     
 set postponed="+.Drafts"                                                         
 set spoolfile="~/Maildir"
+auto_view text/x-vcard text/html text/enriched
 
