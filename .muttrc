@@ -11,4 +11,8 @@ set copy=yes
 set postponed="+.Drafts"                                                         
 set spoolfile="~/Maildir"
 auto_view text/x-vcard text/html text/enriched
-
+set crypt_use_gpgme=yes                                                          
+set crypt_autosign=yes                                                           
+set crypt_verify_sig=yes                                                         
+set crypt_replyencrypt=yes                                                       
+set crypt_replysignencrypted=yes
