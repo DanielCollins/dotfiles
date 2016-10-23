@@ -9,4 +9,7 @@ set noswapfile
 set nomodeline
 set background=light
 colorscheme solarized
-
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
