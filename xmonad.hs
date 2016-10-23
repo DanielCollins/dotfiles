@@ -3,6 +3,7 @@
 import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.SetWMName
+import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.ManageDocks
 import XMonad.Util.Run (spawnPipe)
 import XMonad.Util.EZConfig (additionalKeys)
@@ -27,12 +28,13 @@ main = do
            terminal = "urxvt",
            manageHook = manageDocks <+> manageHook defaultConfig,
            layoutHook = avoidStruts $ layoutHook defaultConfig,
-           handleEventHook = handleEventHook defaultConfig <+> docksEventHook,
+           handleEventHook = fullscreenEventHook <+>
+                             handleEventHook defaultConfig <+> docksEventHook,
            logHook = dynamicLogWithPP xmobarPP
                       { ppOutput = hPutStrLn xmproc },
            normalBorderColor = "#101010",
            focusedBorderColor = "#d0d0d0",
            startupHook = setWMName "LG3D",
            mouseBindings = mouse,
-           borderWidth = 2 } `additionalKeys`
+           borderWidth = 2 } `additionalKeys` 
                                 [((mod4Mask, xK_b), sendMessage ToggleStruts)]
