@@ -7,7 +7,7 @@ set nobackup
 set nowb
 set noswapfile
 set nomodeline
-set background=light
+set background=dark
 colorscheme solarized
 map <Left> <Nop>
 map <Right> <Nop>
