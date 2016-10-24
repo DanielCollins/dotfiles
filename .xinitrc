@@ -11,4 +11,7 @@ fi
 
 xrdb -merge ~/.Xdefaults
 xsetroot -cursor_name left_ptr &
+
+xautolock -time 10 -locker "./lock.sh" -detectsleep -notify 2 &
+
 xmonad
