@@ -9,8 +9,21 @@ Config { font = "xft:DejaVu Sans Mono:pixelsize=12:autohint=true"
        , commands = [ Run Weather "YMML" ["-t","<station>: <tempC>C","-L","18","-H","25"] 36000
                     , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
                     , Run StdinReader
+                    , Run Battery [ "--template" , "<acstatus>"
+                             , "--Low"      , "10"        -- units: %
+                             , "--High"     , "80"        -- units: %
+                             , "--low"      , "#dc322f"
+                             , "--normal"   , "#b58900"
+                             , "--high"     , "#859900"
+                             , "--" 
+                             , "-o"	, "Discharging <left>% (<timeleft>)"
+                             -- AC "on" status
+                             , "-O"	, "Charging <left>%"
+                              -- charged status , "-i"	, "Charged (<timeleft>)"
+                             ] 50
+
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %YMML% | %date%  "
+       , template = "%StdinReader% }{ %battery% | %YMML% | %date%  "
        }
