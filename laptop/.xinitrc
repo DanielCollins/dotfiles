@@ -15,6 +15,7 @@ xmodmap /etc/X11/xinit/.Xmodmap
 
 xsetroot -cursor_name left_ptr &
 xautolock -time 10 -locker "./lock.sh" -detectsleep -notify 2 &
+feh --bg-scale wallpaper.xpm
 
 xmonad &
 urxvt &
