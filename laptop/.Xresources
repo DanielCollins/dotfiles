@@ -2,7 +2,7 @@ URxvt*transparent:false
 URxvt*font:xft:DejaVu Sans Mono:pixelsize=14:autohint=true
 URxvt*scrollBar:false
 URxvt*scrollBar_right:false
-URxvt*imLocale:en_US.UTF-8
+URxvt*imLocale:en_AU.UTF-8
 URxvt*iso14755: False
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: chrome
