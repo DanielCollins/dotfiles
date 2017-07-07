@@ -1,0 +1,11 @@
+ntpd_flags=
+sendmail_flags=NO
+smtpd_flags=""
+ftpproxy_flags=""
+gateway_enable="YES"
+pf_enable="YES"
+pf_rules="/etc/pf.conf"
+spamd_flags="-4 G25:4:1024 -h dcollins.info -l127.0.0.1 -n \"Sendmail 8.11.4/8.11.1\" -S6 -s2 -v -w1"
+spamd_black=NO
+spamlogd_flags=""
+spamd_grey=YES
